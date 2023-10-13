@@ -1,0 +1,893 @@
+[
+    {
+        "executionDate": "2023-09-17 20:49:21",
+        "accuracy": 0.6888888888888889,
+        "params": {
+            "batch_size": 100,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                16,
+                32
+            ],
+            "inputShape": [
+                13
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        }
+    },
+    {
+        "executionDate": "2023-09-18 21:24:07",
+        "accuracy": 0.6666666666666666,
+        "params": {
+            "batch_size": 300,
+            "epochs": 50000,
+            "hiddenLayerUnits": [
+                32,
+                32
+            ],
+            "inputShape": [
+                13
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification"
+        ]
+    },
+    {
+        "executionDate": "2023-09-18 21:25:57",
+        "accuracy": 0.5111111111111111,
+        "params": {
+            "batch_size": 50000,
+            "epochs": 100,
+            "hiddenLayerUnits": [
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+            ],
+            "inputShape": [
+                13
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification"
+        ]
+    },
+    {
+        "executionDate": "2023-09-18 21:42:25",
+        "accuracy": 0.48888888888888893,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+            ],
+            "inputShape": [
+                13
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification"
+        ]
+    },
+    {
+        "executionDate": "2023-09-18 21:48:48",
+        "accuracy": 0.711111111111111,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                13
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification"
+        ]
+    },
+    {
+        "executionDate": "2023-09-19 21:05:22",
+        "accuracy": 0.7333333333333333,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                23
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-19 21:31:37",
+        "accuracy": 0.7333333333333333,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                23
+            ],
+            "kernel_initializer": "normal",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-19 21:41:38",
+        "accuracy": 0.6666666666666666,
+        "params": {
+            "batch_size": 25,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                23
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-19 21:54:09",
+        "accuracy": 0.7333333333333334,
+        "params": {
+            "batch_size": 35,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8
+            ],
+            "inputShape": [
+                23
+            ],
+            "kernel_initializer": "normal",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-20 19:38:19",
+        "accuracy": 0.0,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-20 19:54:07",
+        "accuracy": 0.0,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-20 20:18:38",
+        "accuracy": 0.0,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                25
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-20 20:30:19",
+        "accuracy": 0.0,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                25
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-20 20:46:31",
+        "accuracy": 0.0,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                22
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-20 21:09:00",
+        "accuracy": 0.6888888888888889,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8,
+                8
+            ],
+            "inputShape": [
+                23
+            ],
+            "kernel_initializer": "normal",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-20 21:23:19",
+        "accuracy": 0.6222222222222222,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                32
+            ],
+            "kernel_initializer": "normal",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "rmsdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "rmsalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "rmstheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-20 21:39:41",
+        "accuracy": 0.7333333333333333,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                32
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "rmsdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "rmsalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "rmstheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-26 21:10:00",
+        "accuracy": 0.7555555555555554,
+        "params": {
+            "batch_size": 35,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8
+            ],
+            "inputShape": [
+                32
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "rmsdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "rmsalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "rmstheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-28 20:56:07",
+        "accuracy": 0.0,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8,
+                8
+            ],
+            "inputShape": [
+                34
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanDerivate_1",
+            "meanDerivate_2",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "rmsdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "rmsalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "rmstheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    },
+    {
+        "executionDate": "2023-09-28 21:21:38",
+        "accuracy": 0.7555555555555555,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                12
+            ],
+            "inputShape": [
+                34
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "amplitudeVariation",
+            "kurtosis",
+            "max",
+            "mean",
+            "meanAmplitude",
+            "meanDerivate_1",
+            "meanDerivate_2",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "min",
+            "rms",
+            "skewness",
+            "std",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "rmsdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "rmsalpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "rmstheta",
+            "meanAtheta",
+            "meanFitheta"
+        ]
+    }
+]

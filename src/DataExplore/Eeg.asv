@@ -1,0 +1,102 @@
+classdef Eeg
+    properties
+        signal
+        %duration removed, equal to all
+        amplitudeVariation
+        mean
+        median
+        std
+        kurtosis
+        skewness
+        max
+        min
+        rms
+        variance
+
+        %sequencePeriod removed, equal to all
+        meanAmplitude
+
+        meanFrequency
+        medianFrequency
+        totalPower
+
+        alpha
+        delta
+        theta
+
+        zzclassification
+
+        sampleRate = 200
+    end
+    methods
+        function obj = Eeg(signal, classification)
+            obj.signal = signal;
+            %obj.duration = size(signal, 2)/obj.sampleRate;
+            obj.amplitudeVariation = max(findpeaks(signal)) - min(findpeaks(signal));
+
+            obj.mean = mean(signal);
+            obj.median = median(signal);
+            obj.std = std(signal);
+            obj.kurtosis = kurtosis(signal);
+            obj.skewness = skewness(signal);
+            obj.max = max(signal);
+            obj.min = min(signal);
+            obj.rms = rms(signal);
+            obj.variance = var(signal);
+
+            %obj.sequencePeriod = seqperiod(signal);
+            obj.meanAmplitude = mean(findpeaks(signal));
+    
+            obj.meanFrequency = meanfreq(signal);
+            obj.medianFrequency = medfreq(signal);
+            obj.totalPower = obj.rms^2;
+
+            obj.delta = Band(signal, [0.5 4]);
+            obj.alpha = Band(signal, [4 8]);
+            obj.theta = Band(signal, [8 12]);
+
+            obj.zzclassification = classification;
+        end
+
+        function plot(obj)
+            plot(obj.signal);
+        end
+
+        function line = to_string(obj)
+            line = '';
+
+            props = properties(obj);
+
+            noWrite = {'signal', 'alpha', 'theta', 'delta', 'sampleRate'};
+            props = setdiff(props, noWrite);
+
+            for i = 1:numel(props)                
+                % Obter o valor do atributo
+                props{i};
+                value = obj.(props{i});
+                
+                % Adicionar o atributo e valor à linha
+                line = [line num2str(value) ','];
+            end
+
+            line = [line(1:end-1)];
+        end
+
+        function line = get_headers(obj)
+            line = '';
+
+            props = properties(obj);
+
+            noWrite = {'signal', 'alpha', 'theta', 'delta', 'sampleRate'};
+            props = setdiff(props, noWrite);
+
+            for i = 1:numel(props)                                
+                % Adicionar o atributo e valor à linha
+                line = [line props{i} ','];
+            end
+
+            line = [line(1:end-1)];
+        end
+
+    end
+end
