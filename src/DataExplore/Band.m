@@ -8,7 +8,9 @@ classdef Band
         meanAmplitude
         dht
         band
-        rms %remover
+
+        prdgm
+        %rms %remover
 
         sampleRate = 200
     end
@@ -17,8 +19,18 @@ classdef Band
             obj.bandwidth = bandwidth;
             obj.signal = bandpass(signal, obj.bandwidth, obj.sampleRate);
 
-            obj.rms = rms(obj.signal);
-            obj.power = obj.rms^2;;
+            Hs = spectrum.periodogram;
+            obj.prdgm = psd(Hs,signal,'Fs',obj.sampleRate);
+            
+            %obj.rms = rms(obj.signal);
+            obj.power = trapz(...
+                filterDataByFrequency(...
+                    obj,...
+                    obj.prdgm,...
+                    bandwidth(1),...
+                    bandwidth(end)...
+                )...
+            );
 
             obj.meanAmplitude = mean(findpeaks(obj.signal));
 
@@ -36,7 +48,7 @@ classdef Band
 
             props = properties(obj);
 
-            noWrite = {'sampleRate', 'bandwidth', 'signal', 'dht', 'band'};
+            noWrite = {'sampleRate', 'bandwidth', 'signal', 'dht', 'band', 'prdgm'};
             props = setdiff(props, noWrite);
 
             for i = 1:numel(props)                
@@ -69,6 +81,19 @@ classdef Band
             line = [line obj.dht.get_headers() ','];
 
             line = [line(1:end-1)];
+        end
+
+        function filteredData = filterDataByFrequency(obj, dataObj, minFreq, maxFreq)
+
+            % Obtenha os dados e as frequências
+            data = dataObj.Data;
+            frequencies = dataObj.Frequencies;
+
+            % Encontre os índices das frequências dentro do intervalo desejado
+            validIndices = find(frequencies >= minFreq & frequencies <= maxFreq);
+
+            % Filtre os valores de Data com base nos índices válidos
+            filteredData = data(validIndices);
         end
     end
        
