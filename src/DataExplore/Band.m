@@ -70,7 +70,7 @@ classdef Band
 
             props = properties(obj);
 
-            noWrite = {'sampleRate', 'bandwidth', 'signal', 'dht', 'band'};
+            noWrite = {'sampleRate', 'bandwidth', 'signal', 'dht', 'band', 'prdgm'};
             props = setdiff(props, noWrite);
 
             for i = 1:numel(props)                                

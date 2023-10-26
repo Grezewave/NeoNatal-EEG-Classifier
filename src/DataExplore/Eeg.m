@@ -106,6 +106,8 @@ classdef Eeg
             line = [line obj.delta.to_string() ','];
             line = [line obj.alpha.to_string() ','];
             line = [line obj.theta.to_string() ','];
+            line = [line obj.beta.to_string() ','];
+            line = [line obj.gamma.to_string() ','];
 
             line = [line(1:end-1)];
         end
@@ -115,7 +117,7 @@ classdef Eeg
 
             props = properties(obj);
 
-            noWrite = {'signal', 'alpha', 'theta', 'delta', 'sampleRate', 'derivate_1', 'derivate_2'};
+            noWrite = {'signal', 'alpha', 'theta', 'beta', 'gamma', 'delta', 'sampleRate', 'prdgm'};
             props = setdiff(props, noWrite);
 
             for i = 1:numel(props)                                
@@ -126,6 +128,8 @@ classdef Eeg
             line = [line obj.delta.get_headers() ','];
             line = [line obj.alpha.get_headers() ','];
             line = [line obj.theta.get_headers() ','];
+            line = [line obj.beta.get_headers() ','];
+            line = [line obj.gamma.get_headers() ','];
 
             line = [line(1:end-1)];
         end

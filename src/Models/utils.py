@@ -8,8 +8,8 @@ import datetime
 
 
 def selectFeature(features: pd.DataFrame, featureList: list) -> pd.DataFrame:
-    print(features.loc[:, featureList])
-    features.loc[:, featureList].to_csv("teste")
+    # print(features.loc[:, featureList])
+    # features.loc[:, featureList].to_csv("teste")
     return features.loc[:, featureList].values
 
 
@@ -84,7 +84,9 @@ def loadExperiment(experimentData, features, classes):
     data = experimentData
     parameters = data["params"]
     featuresList = data["features"]
-    featuresList.remove("zzclassification")
+
+    if "zzclassification" in featuresList:
+        featuresList.remove("zzclassification")
 
     network = createNetwork((parameters["inputShape"][0],),
                             parameters["hiddenLayerUnits"],
@@ -96,6 +98,9 @@ def loadExperiment(experimentData, features, classes):
     trainingInputs, testInputs, \
         trainingClasses, testClasses = train_test_split(
             featureSet, classes, test_size=0.25)
+
+    print(len(featuresList))
+    print(featureSet)
 
     network.fit(x=trainingInputs, y=trainingClasses,
                 batch_size=parameters["batch_size"],
