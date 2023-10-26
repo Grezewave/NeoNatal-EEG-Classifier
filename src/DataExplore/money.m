@@ -1,7 +1,7 @@
 % Parâmetros
 investimento_mensal = 1000;  % Valor investido por mês
 taxa_mensal = 0.01;  % Taxa de juros mensal (1%)
-meses = 100;  % Número de meses
+meses = 240;  % Número de meses
 
 % Cálculo do montante
 montante = zeros(1, meses);
