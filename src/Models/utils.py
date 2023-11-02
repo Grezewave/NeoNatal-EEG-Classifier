@@ -48,14 +48,15 @@ def read_json_from_file(filename):
 
 
 # Function to append a new log entry
-def append_log(execution_date, accuracy, params, features, logFile):
+def append_log(execution_date, accuracy, params, features, logFile, baseFile):
 
     data = read_json_from_file(logFile)
     new_entry = {
         "executionDate": execution_date,
         "accuracy": accuracy,
         "params": params,
-        "features": features
+        "features": features,
+        "baseFile": baseFile
     }
     data.append(new_entry)
 

@@ -2598,7 +2598,8 @@
             "meanAbeta",
             "meanFibeta",
             "powergamma"
-        ]
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
     },
     {
         "executionDate": "2023-10-19 12:32:20",
@@ -2692,7 +2693,8 @@
             "meanAbeta",
             "meanFibeta",
             "powergamma"
-        ]
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
     },
     {
         "executionDate": "2023-10-21 09:50:31",
@@ -2930,5 +2932,613 @@
             "meanFibeta",
             "powergamma"
         ]
+    },
+    {
+        "executionDate": "2023-10-30 19:07:58",
+        "accuracy": 0.6444444444444445,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                14
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
+    },
+    {
+        "executionDate": "2023-10-30 19:39:48",
+        "accuracy": 0.6444444444444445,
+        "params": {
+            "batch_size": 50,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                12
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
+    },
+    {
+        "executionDate": "2023-10-30 20:04:39",
+        "accuracy": 0.6666666666666666,
+        "params": {
+            "batch_size": 50,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
+    },
+    {
+        "executionDate": "2023-10-30 20:34:05",
+        "accuracy": 0.6888888888888889,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                12
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
+    },
+    {
+        "executionDate": "2023-10-30 21:11:50",
+        "accuracy": 0.7333333333333333,
+        "params": {
+            "batch_size": 50,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                14
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "normal",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
+    },
+    {
+        "executionDate": "2023-10-30 21:48:17",
+        "accuracy": 0.7333333333333334,
+        "params": {
+            "batch_size": 50,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                12
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "normal",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
+    },
+    {
+        "executionDate": "2023-10-31 16:44:07",
+        "accuracy": 0.7333333333333334,
+        "params": {
+            "batch_size": 20,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                14
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "normal",
+            "loss": "binary_crossentropy",
+            "optimizer": "adamax"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHTBartlett.csv"
+    },
+    {
+        "executionDate": "2023-10-31 17:20:31",
+        "accuracy": 0.6666666666666666,
+        "params": {
+            "batch_size": 20,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                8
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adamax"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHTBartlett.csv"
+    },
+    {
+        "executionDate": "2023-10-31 18:07:38",
+        "accuracy": 0.7333333333333333,
+        "params": {
+            "batch_size": 35,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                14
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHTBartlett.csv"
+    },
+    {
+        "executionDate": "2023-10-31 19:01:48",
+        "accuracy": 0.6666666666666666,
+        "params": {
+            "batch_size": 30,
+            "epochs": 2000,
+            "hiddenLayerUnits": [
+                14
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHTBartlett.csv"
+    },
+    {
+        "executionDate": "2023-10-31 19:47:00",
+        "accuracy": 0.6888888888888889,
+        "params": {
+            "batch_size": 35,
+            "epochs": 2000,
+            "hiddenLayerUnits": [
+                12
+            ],
+            "inputShape": [
+                28
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adamax"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHTBartlett.csv"
+    },
+    {
+        "executionDate": "2023-11-01 20:40:02",
+        "accuracy": 0.6666666666666667,
+        "params": {
+            "batch_size": 30,
+            "epochs": 1000,
+            "hiddenLayerUnits": [
+                12
+            ],
+            "inputShape": [
+                20
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adam"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
+    },
+    {
+        "executionDate": "2023-11-01 21:30:00",
+        "accuracy": 0.7555555555555555,
+        "params": {
+            "batch_size": 30,
+            "epochs": 2000,
+            "hiddenLayerUnits": [
+                12
+            ],
+            "inputShape": [
+                20
+            ],
+            "kernel_initializer": "normal",
+            "loss": "binary_crossentropy",
+            "optimizer": "adamax"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPatternBandDHT.csv"
     }
 ]

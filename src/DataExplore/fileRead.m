@@ -20,7 +20,7 @@ end
 headers = signals{1}.get_headers();
 
 % Nome do arquivo CSV
-fileName = './eegPatternBandDHT.csv';
+fileName = './eegPatternBandDHTBartlett.csv';
 
 % Abrir o arquivo para escrita
 fid = fopen(fileName, 'w');
