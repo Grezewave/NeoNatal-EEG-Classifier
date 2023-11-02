@@ -6,25 +6,26 @@ opts = detectImportOptions('splitted/dht_data.csv');
 opts.VariableNamingRule = 'preserve';
 data = readtable('splitted/dht_data.csv', opts);
 
-% Name of columns
+% Nomes das colunas
 columns = data.Properties.VariableNames;
 
-% Split columns in bands
-num_columns = numel(columns);
-num_bands = num_columns / 2;
+% Separe as colunas em grupos de 2
+num_colunas = numel(colunas);
+num_grupos = num_colunas / 2;
 
-for band = 1:num_bands
+for grupo = 1:num_grupos
+    % Crie uma nova figura
     figure;
 
-    % Plot
+    % Plote cada coluna do grupo atual
     for coluna = 1:2
         subplot(2, 1, coluna);
 
-        % Select column of table
-        coluna_atual = data.(columns{(band - 1) * 2 + coluna});
+        % Selecione a coluna apropriada
+        coluna_atual = data.(colunas{(grupo - 1) * 2 + coluna});
 
-        % Plot TA HVS
-        classes = unique(data.zzclassification);
+        % Plote as classes TA e HVS
+        classes = unique(data.zzclassification); % Supondo que a coluna com classes seja chamada 'Class'
         for i = 1:length(classes)
             classe = classes{i};
             indices = strcmp(data.zzclassification, classe);
@@ -39,15 +40,15 @@ for band = 1:num_bands
             hold on;
         end
 
-        % Add figure texts
-        title(columns{(band - 1) * 2 + coluna});
+        % Adicione rótulos e legenda
+        title(colunas{(grupo - 1) * 2 + coluna});
         legend('Location', 'Best');
     end
-    % Extract items for file name
-    columnName = columns{(band - 1) * 2 + coluna}
-    index = strfind(columnName,' - ')
-    fileName = columnName(index + 3:end);
-    filePath = strcat(strcat('figures/',fileName),'.pdf')
+    % Extraia o nome do arquivo a partir do nome da coluna
+    nome_coluna = colunas{(grupo - 1) * 2 + coluna};
+    indice_hifen = find(nome_coluna == '-', 1, 'last');
+    nome_arquivo = nome_coluna(indice_hifen + 1:end);
+    file_path = 'figures/' + nome_arquivo + '.pdf'
 
     set(gcf, 'Position', [100, 100, 800, 600]);
     print(filePath, '-dpdf', '-r600');
