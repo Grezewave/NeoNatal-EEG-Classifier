@@ -4,7 +4,7 @@ clc
 
 opts = detectImportOptions('splitted/dht_data.csv');
 opts.VariableNamingRule = 'preserve';
-data = readtable('splitted/dht_data.csv', opts);
+data = readtable('splitted/dht_data.csv', opts)
 
 % Name of columns
 columns = data.Properties.VariableNames;
@@ -17,34 +17,27 @@ for band = 1:num_bands
     figure;
 
     % Plot
-    for coluna = 1:2
-        subplot(2, 1, coluna);
 
-        % Select column of table
-        coluna_atual = data.(columns{(band - 1) * 2 + coluna});
+    % Select column of table
+    coluna_atual = [data.(columns{(band - 1) * 2 + 1}) data.(columns{(band - 1) * 2 + 2})]
 
-        % Plot TA HVS
-        classes = unique(data.zzclassification);
-        for i = 1:length(classes)
-            classe = classes{i};
-            indices = strcmp(data.zzclassification, classe);
-            plot(coluna_atual(indices), 'DisplayName', classe);
-            xlabel('índice da amostra')
-            if coluna == 1
-                ylabel('A[i]')
-            end
-            if coluna == 2
-                ylabel('|F[i]|')
-            end
-            hold on;
-        end
-
-        % Add figure texts
-        title(columns{(band - 1) * 2 + coluna});
-        legend('Location', 'Best');
+    % Plot TA HVS
+    classes = unique(data.zzclassification);
+    for i = 1:length(classes)
+        classe = classes{i};
+        indices = strcmp(data.zzclassification, classe);
+        scatter(coluna_atual(indices,2), coluna_atual(indices,1), 'DisplayName', classe)
+        ylabel('A[i]')
+        xlabel('|F[i]|')
+        hold on;
     end
+
+    % Add figure texts
+    title(columns{(band - 1) * 2 + 1});
+    legend('Location', 'Best');
+
     % Extract items for file name
-    columnName = columns{(band - 1) * 2 + coluna}
+    columnName = columns{(band - 1) * 2 + 1}
     index = strfind(columnName,' - ')
     fileName = columnName(index + 3:end);
     filePath = strcat(strcat('figures/',fileName),'.pdf')
