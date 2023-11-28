@@ -19,7 +19,7 @@ classdef Band
             obj.bandwidth = bandwidth;
             obj.signal = bandpass(signal, obj.bandwidth, obj.sampleRate);
 
-            Hs = spectrum.periodogram('Bartlett');
+            Hs = spectrum.periodogram;
             obj.prdgm = psd(Hs,signal,'Fs',obj.sampleRate);
             
             %obj.rms = rms(obj.signal);
