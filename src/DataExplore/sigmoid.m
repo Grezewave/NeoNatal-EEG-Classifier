@@ -10,4 +10,6 @@ title('Função sigmoid');
 
 set(gcf, 'Position', [100, 100, 800, 600]);
 
+set(gcf, 'PaperSize', [800, 400]);
+
 print('funcao_sigmoid.pdf', '-dpdf', '-r600');
