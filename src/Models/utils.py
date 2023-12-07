@@ -103,13 +103,13 @@ def loadExperiment(experimentData, features, classes):
     print(len(featuresList))
     print(featureSet)
 
-    network.fit(x=trainingInputs, y=trainingClasses,
+    trainResults = network.fit(x=trainingInputs, y=trainingClasses,
                 batch_size=parameters["batch_size"],
                 epochs=parameters["epochs"]
                 )
     testResults = network.evaluate(x=testInputs, y=testClasses)
 
-    return network, testResults
+    return network, testResults, trainResults
 
 
 def makeFolder(base, word):

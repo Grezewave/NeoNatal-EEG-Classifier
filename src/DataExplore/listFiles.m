@@ -2,7 +2,7 @@ clear
 close all
 clc
 
-listDir = dir("../Data/");
+listDir = dir("../../Data58/");
 fileList = [""];
 j = 1;
 

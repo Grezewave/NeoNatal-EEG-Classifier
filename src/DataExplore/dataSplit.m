@@ -1,5 +1,8 @@
+clear
+close all
+clc
 % Load data from CSV file
-data_table = readtable('filteredBase.csv');
+data_table = readtable('../Models/filteredBase.csv');
 
 % Extract the 'zzclassification' column
 classification_column = data_table.zzclassification;

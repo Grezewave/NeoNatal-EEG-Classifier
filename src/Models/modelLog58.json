@@ -1,0 +1,183 @@
+[
+    {
+        "executionDate": "2023-12-06 14:49:47",
+        "accuracy": 0.7055555555555555,
+        "params": {
+            "batch_size": 35,
+            "epochs": 2000,
+            "hiddenLayerUnits": [
+                17
+            ],
+            "inputShape": [
+                34
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adamax"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "meangamma",
+            "meanAmplitudegamma",
+            "powergamma",
+            "meanAgamma",
+            "meanFigamma"
+        ],
+        "baseFile": "../DataExplore/eegPattern58.csv"
+    },
+    {
+        "executionDate": "2023-12-06 15:35:18",
+        "accuracy": 0.836111111111111,
+        "params": {
+            "batch_size": 35,
+            "epochs": 5000,
+            "hiddenLayerUnits": [
+                14
+            ],
+            "inputShape": [
+                19
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adamax"
+        },
+        "features": [
+            "kurtosis",
+            "meanAmplitude",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meanAmplitudedelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meanAmplitudetheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta"
+        ],
+        "baseFile": "../DataExplore/eegPattern58.csv"
+    },
+    {
+        "executionDate": "2023-12-06 16:22:37",
+        "accuracy": 0.6472222222222223,
+        "params": {
+            "batch_size": 50,
+            "epochs": 2000,
+            "hiddenLayerUnits": [
+                12
+            ],
+            "inputShape": [
+                24
+            ],
+            "kernel_initializer": "random_uniform",
+            "loss": "binary_crossentropy",
+            "optimizer": "adamax"
+        },
+        "features": [
+            "kurtosis",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPattern58.csv"
+    },
+    {
+        "executionDate": "2023-12-06 17:17:42",
+        "accuracy": 0.6555555555555556,
+        "params": {
+            "batch_size": 35,
+            "epochs": 5000,
+            "hiddenLayerUnits": [
+                12
+            ],
+            "inputShape": [
+                24
+            ],
+            "kernel_initializer": "normal",
+            "loss": "binary_crossentropy",
+            "optimizer": "adamax"
+        },
+        "features": [
+            "kurtosis",
+            "meanAmplitude",
+            "median",
+            "skewness",
+            "totalPower",
+            "variance",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "powergamma"
+        ],
+        "baseFile": "../DataExplore/eegPattern58.csv"
+    }
+]

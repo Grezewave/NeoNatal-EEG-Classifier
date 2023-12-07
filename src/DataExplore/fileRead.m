@@ -3,10 +3,12 @@ clear
 clc
 
 load("fileList.mat")
-signals = {}
+signals = {};
 
-j = 1
+j = 1;
 for i = fileList
+    j
+    i
     load(i);
     if contains(i, '_HVS.')
         classification = 'HVS';
@@ -18,9 +20,9 @@ for i = fileList
 end
 
 headers = signals{1}.get_headers();
-
+  
 % Nome do arquivo CSV
-fileName = './eegPatternBandDHTBartlett.csv';
+fileName = './eegPattern58.csv';
 
 % Abrir o arquivo para escrita
 fid = fopen(fileName, 'w');
@@ -28,10 +30,11 @@ fprintf(fid, '%s', headers);
 fprintf(fid, '\n');
 
 % Escrever os dados linha por linha
-for i = 2:size(signals, 2)
+for i = 1:size(signals, 2)
     fprintf(fid, '%s\n', signals{i}.to_string());
 end
 
 % Fechar o arquivo
 fclose(fid);
+
 
