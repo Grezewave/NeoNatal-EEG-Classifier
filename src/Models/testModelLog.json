@@ -6868,5 +6868,194 @@
             "h5": "TrainedModels/20231102_095229_0.62/model_weights.h5",
             "json": "TrainedModels/20231102_095229_0.62/model.json"
         }
+    },
+    {
+        "executionDate": "2023-12-06 14:50:48",
+        "accuracy": 0.800000011920929,
+        "params": {
+            "executionDate": "2023-10-19 18:19:08",
+            "accuracy": 0.7777777777777777,
+            "params": {
+                "batch_size": 50,
+                "epochs": 10000,
+                "hiddenLayerUnits": [
+                    14
+                ],
+                "inputShape": [
+                    28
+                ],
+                "kernel_initializer": "random_uniform",
+                "loss": "binary_crossentropy",
+                "optimizer": "adamax"
+            },
+            "features": [
+                "kurtosis",
+                "mean",
+                "meanAmplitude",
+                "median",
+                "skewness",
+                "totalPower",
+                "variance",
+                "meandelta",
+                "meanAmplitudedelta",
+                "powerdelta",
+                "meanAdelta",
+                "meanFidelta",
+                "meanalpha",
+                "meanAmplitudealpha",
+                "poweralpha",
+                "meanAalpha",
+                "meanFialpha",
+                "meantheta",
+                "meanAmplitudetheta",
+                "powertheta",
+                "meanAtheta",
+                "meanFitheta",
+                "meanbeta",
+                "meanAmplitudebeta",
+                "powerbeta",
+                "meanAbeta",
+                "meanFibeta",
+                "powergamma"
+            ],
+            "baseFile": "../DataExplore/eegPattern58.csv"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "skewness",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "meangamma",
+            "meanAmplitudegamma",
+            "powergamma",
+            "meanAgamma",
+            "meanFigamma"
+        ],
+        "modelFiles": {
+            "h5": "TrainedModels58/20231206_145048_0.80/model_weights.h5",
+            "json": "TrainedModels58/20231206_145048_0.80/model.json"
+        }
+    },
+    {
+        "executionDate": "2023-12-08 11:01:48",
+        "accuracy": [
+            1.0,
+            0.46666666865348816
+        ],
+        "params": {
+            "executionDate": "2023-10-19 18:19:08",
+            "accuracy": 0.7777777777777777,
+            "params": {
+                "batch_size": 50,
+                "epochs": 10000,
+                "hiddenLayerUnits": [
+                    14
+                ],
+                "inputShape": [
+                    28
+                ],
+                "kernel_initializer": "random_uniform",
+                "loss": "binary_crossentropy",
+                "optimizer": "adamax"
+            },
+            "features": [
+                "kurtosis",
+                "mean",
+                "meanAmplitude",
+                "median",
+                "skewness",
+                "totalPower",
+                "variance",
+                "meandelta",
+                "meanAmplitudedelta",
+                "powerdelta",
+                "meanAdelta",
+                "meanFidelta",
+                "meanalpha",
+                "meanAmplitudealpha",
+                "poweralpha",
+                "meanAalpha",
+                "meanFialpha",
+                "meantheta",
+                "meanAmplitudetheta",
+                "powertheta",
+                "meanAtheta",
+                "meanFitheta",
+                "meanbeta",
+                "meanAmplitudebeta",
+                "powerbeta",
+                "meanAbeta",
+                "meanFibeta",
+                "powergamma"
+            ],
+            "baseFile": "../DataExplore/eegPattern58.csv"
+        },
+        "features": [
+            "kurtosis",
+            "mean",
+            "meanAmplitude",
+            "meanFrequency",
+            "median",
+            "medianFrequency",
+            "skewness",
+            "totalPower",
+            "variance",
+            "zzclassification",
+            "meandelta",
+            "meanAmplitudedelta",
+            "powerdelta",
+            "meanAdelta",
+            "meanFidelta",
+            "meanalpha",
+            "meanAmplitudealpha",
+            "poweralpha",
+            "meanAalpha",
+            "meanFialpha",
+            "meantheta",
+            "meanAmplitudetheta",
+            "powertheta",
+            "meanAtheta",
+            "meanFitheta",
+            "meanbeta",
+            "meanAmplitudebeta",
+            "powerbeta",
+            "meanAbeta",
+            "meanFibeta",
+            "meangamma",
+            "meanAmplitudegamma",
+            "powergamma",
+            "meanAgamma",
+            "meanFigamma"
+        ],
+        "modelFiles": {
+            "h5": "TrainedModels58/20231208_110148_0.46/model_weights.h5",
+            "json": "TrainedModels58/20231208_110148_0.46/model.json"
+        }
     }
 ]
